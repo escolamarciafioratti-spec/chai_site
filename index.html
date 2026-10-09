@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONG de Proteção Animal em Água Clara MS | Chai Anjos</title>
+<meta name="description" content="Associação Chai Anjos Abandonados: resgate, adoção responsável de cães e gatos e doação de ração em Água Clara - MS. Adote, doe via Pix ou seja voluntário.">
+<meta name="author" content="Associação Chai Anjos Abandonados">
+<link rel="icon" href="logo-chai.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="ONG de Proteção Animal em Água Clara MS | Chai Anjos">
+<meta property="og:description" content="Associação Chai Anjos Abandonados: resgate, adoção responsável de cães e gatos e doação de ração em Água Clara - MS. Adote, doe via Pix ou seja voluntário.">
+<!-- IMPORTANTE: quando o site tiver endereço (domínio), troque por o endereço completo, ex.: https://seusite.com.br/img/og-image.jpg -->
+<meta property="og:image" content="img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:#173f3b;background:#fff;line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit}
+:root{--verde:#187c69;--verde-escuro:#073f3b;--verde-claro:#eaf7f1;--azul:#328bc4;--azul-claro:#edf7fd;--laranja:#f39a17;--laranja-claro:#fff2d8;--rosa:#f7eafa;--texto:#173f3b;--texto-claro:#607572;--branco:#fff;--cinza:#f6f8f7;--sombra:0 15px 40px rgba(10,70,62,.10);--radius:20px}
+.container{width:min(1180px,92%);margin:auto}
+.section{padding:90px 0}
+.section-title{text-align:center;margin-bottom:55px}
+.section-title .mini,.mini{display:inline-flex;align-items:center;gap:8px;color:var(--verde);font-weight:700;margin-bottom:10px}
+.section-title h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;color:var(--verde-escuro)}
+.section-title p{max-width:680px;margin:15px auto 0;color:var(--texto-claro)}
+.script{font-family:"Pacifico",cursive;font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:none;border-radius:50px;padding:14px 24px;font-weight:700;cursor:pointer;transition:.3s}
+.btn:hover{transform:translateY(-3px)}
+.btn-orange{background:var(--laranja);color:#fff;box-shadow:0 8px 20px rgba(243,154,23,.25)}
+.btn-green{background:var(--verde);color:#fff}
+.btn-outline{border:2px solid var(--verde);color:var(--verde);background:transparent}
+
+header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #edf0ef}
+.header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo{width:130px;flex-shrink:0}.logo img{width:100%;height:auto}
+nav{display:flex;align-items:center;gap:28px}
+nav a{font-size:.95rem;font-weight:600;color:#254845;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-8px;width:0;height:2px;background:var(--verde);transition:.3s}
+nav a:hover::after,nav a.active::after{width:100%}
+.header-donate{white-space:nowrap}
+.mobile-menu{display:none;background:transparent;border:none;font-size:1.7rem;color:var(--verde-escuro);cursor:pointer}
+
+.hero{min-height:610px;position:relative;overflow:hidden;background:linear-gradient(90deg,#fff 0%,#fff 52%,rgba(255,255,255,.55) 70%,rgba(255,255,255,0) 100%),url("img/animal-11.webp") right center/auto 100% no-repeat,#fff}
+.hero-inner{min-height:610px;display:flex;align-items:center}
+.hero-content{width:58%;padding:60px 0}.hero-paw{color:var(--verde);font-size:2rem;margin-bottom:15px}
+.hero h1{font-size:clamp(2.4rem,5vw,4.5rem);line-height:1.05;color:var(--verde-escuro);margin-bottom:20px}
+.hero h1 span{color:var(--laranja)}
+.hero p{max-width:590px;font-size:1.15rem;color:#365552;margin-bottom:30px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:14px}
+.hero-message{position:absolute;right:5%;top:35%;max-width:210px;color:#fff;font-family:"Pacifico",cursive;font-size:1.35rem;text-align:center;transform:rotate(-5deg);text-shadow:0 2px 10px rgba(0,0,0,.35)}
+
+.alert-area{padding:25px 0}.alert-box{background:var(--laranja-claro);border-radius:15px;padding:22px 28px;display:flex;align-items:center;gap:20px}
+.alert-icon{width:55px;height:55px;border-radius:50%;background:var(--laranja);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.alert-box strong{display:block;color:var(--verde-escuro);font-size:1.1rem}.alert-box p{color:#596866}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat-card{padding:35px 20px;text-align:center;border-radius:var(--radius);background:var(--verde-claro);transition:.3s}
+.stat-card:nth-child(2){background:var(--azul-claro)}.stat-card:nth-child(3){background:#fff4e9}.stat-card:nth-child(4){background:var(--rosa)}
+.stat-card:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+.stat-icon{width:65px;height:65px;margin:0 auto 15px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;background:var(--verde);font-size:1.5rem}
+.stat-card:nth-child(2) .stat-icon{background:var(--azul)}.stat-card:nth-child(3) .stat-icon{background:var(--laranja)}.stat-card:nth-child(4) .stat-icon{background:#a44ba5}
+.stat-card h3{font-size:1.05rem;margin-bottom:8px}.stat-card p{font-size:.9rem;color:var(--texto-claro)}.stat-number{font-family:"Pacifico",cursive;color:var(--verde);font-size:1.35rem}
+
+.about{background:#faf8f3}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.about-image img{width:100%;height:450px;object-fit:cover;border-radius:35px}
+.about-content h2{font-size:clamp(2rem,4vw,3rem);color:var(--verde-escuro);margin-bottom:20px}.about-content>p{color:var(--texto-claro);margin-bottom:35px}
+.mv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.mv-card{border-left:2px solid #b8d6ce;padding-left:18px}
+.mv-card i{color:var(--laranja);font-size:1.5rem;margin-bottom:8px}.mv-card h3{margin-bottom:8px}.mv-card p{color:var(--texto-claro);font-size:.92rem}
+
+.help{background:var(--azul-claro)}.help-grid{display:grid;grid-template-columns:1fr 2fr;gap:25px}
+.pix-card{background:var(--verde);color:#fff;border-radius:20px;padding:30px;box-shadow:var(--sombra)}.pix-card h3{font-size:1.5rem;margin-bottom:20px}
+.pix-inside{background:#fff;color:var(--texto);border-radius:15px;padding:22px}.pix-label{font-size:.85rem;color:var(--texto-claro)}
+.pix-key{font-size:1.2rem;font-weight:700;word-break:break-all;margin:5px 0 18px}.pix-company{font-size:.9rem;margin-bottom:20px}
+.copy-pix{width:100%;border:none;border-radius:50px;background:var(--verde);color:#fff;padding:13px;font-weight:700;cursor:pointer;transition:.3s}.copy-pix:hover{background:var(--verde-escuro)}
+.help-options{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.help-card{background:#fff;border-radius:18px;padding:30px 20px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.help-card i{font-size:2rem;color:var(--azul);margin-bottom:15px}.help-card h3{margin-bottom:10px}.help-card p{color:var(--texto-claro);font-size:.9rem;flex:1;margin-bottom:20px}.small-btn{padding:10px 20px;background:var(--verde);color:#fff;border-radius:50px;font-size:.85rem;font-weight:700}
+
+.adoption{background:#fff}.adoption-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.adoption-text h2{font-size:clamp(2rem,4vw,3rem);color:var(--verde-escuro);margin-bottom:20px}.adoption-text p{color:var(--texto-claro);margin-bottom:25px}
+.social-buttons{display:flex;flex-wrap:wrap;gap:12px}.social-btn{padding:13px 20px;border-radius:50px;display:inline-flex;align-items:center;gap:9px;color:#fff;font-weight:700}
+.instagram{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}.facebook{background:#1877f2}
+.animals-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.animals-gallery img{height:220px;width:100%;object-fit:cover;border-radius:20px}
+.animals-gallery img:nth-child(1),.animals-gallery img:nth-child(4){height:300px}
+
+.transparency{background:#f7faf8}.transparency-box{max-width:850px;margin:auto;background:#fff;padding:40px;border-radius:25px;box-shadow:var(--sombra);text-align:center}
+.transparency-box i{font-size:3rem;color:var(--verde);margin-bottom:20px}.transparency-box h3{font-size:1.7rem;margin-bottom:15px}.transparency-box p{color:var(--texto-claro);margin-bottom:25px}
+
+.contact{background:#fff}.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}.contact-card{text-align:center;background:var(--cinza);padding:35px 20px;border-radius:20px}
+.contact-card i{width:60px;height:60px;background:var(--verde-claro);color:var(--verde);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:15px}
+.contact-card h3{margin-bottom:8px}.contact-card p{color:var(--texto-claro)}
+
+footer{background:var(--verde-escuro);color:#fff;padding:60px 0 20px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px}
+.footer-logo{width:120px;margin-bottom:15px;background:#fff;padding:8px;border-radius:12px}footer h3{margin-bottom:18px}
+footer p,footer li,footer a{color:rgba(255,255,255,.75);font-size:.9rem}footer ul{list-style:none}footer li{margin-bottom:10px}footer a:hover{color:#fff}
+.footer-social{display:flex;gap:12px}.footer-social a{width:40px;height:40px;background:rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff}
+.copyright{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;text-align:center;color:rgba(255,255,255,.6);font-size:.85rem}
+.floating-pix{position:fixed;right:24px;bottom:98px;width:58px;height:58px;border-radius:50%;background:var(--laranja);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 25px rgba(0,0,0,.2);z-index:900;font-size:1.4rem}
+.back-top{position:fixed;right:31px;bottom:166px;width:45px;height:45px;background:var(--verde);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:.3s;z-index:900}.back-top.show{opacity:1;visibility:visible}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,100px);background:var(--verde-escuro);color:#fff;padding:15px 25px;border-radius:50px;opacity:0;transition:.4s;z-index:2000}.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:1000px){nav{gap:15px}.hero-content{width:65%}.stats{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){
+.header-inner{min-height:72px}.logo{width:105px}.mobile-menu{display:block}
+nav{position:absolute;top:72px;left:0;right:0;background:#fff;display:none;flex-direction:column;align-items:stretch;padding:20px 6%;box-shadow:0 15px 25px rgba(0,0,0,.08)}
+nav.active{display:flex}nav a{padding:12px 0}.header-donate{display:none}
+.hero{background:linear-gradient(rgba(255,255,255,.91),rgba(255,255,255,.70)),url("img/animal-11.webp") center/cover}
+.hero-content{width:100%;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-buttons{justify-content:center}.hero-message{display:none}
+.about-grid,.adoption-grid,.help-grid{grid-template-columns:1fr}.about-image img{height:350px}.help-options{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){
+.section{padding:65px 0}.stats{grid-template-columns:1fr 1fr}.stat-card{padding:25px 12px}.alert-box{align-items:flex-start;padding:20px}.alert-icon{width:45px;height:45px;font-size:1.1rem}
+.mv-grid{grid-template-columns:1fr}.mv-card{border-left:none;border-top:2px solid #b8d6ce;padding:18px 0 0}.help-options{grid-template-columns:1fr}
+.animals-gallery{grid-template-columns:1fr 1fr}.animals-gallery img,.animals-gallery img:nth-child(1),.animals-gallery img:nth-child(4){height:180px}
+.footer-grid{grid-template-columns:1fr;gap:30px}.hero h1{font-size:2.5rem}.hero,.hero-inner{min-height:650px}}
+@media(max-width:400px){.stats{grid-template-columns:1fr}.hero-buttons{flex-direction:column}.hero-buttons .btn{width:100%}}
+
+/* Ajuste compacto da aba Adote — mantém o modelo visual original */
+.rescue-gallery{padding:65px 0 70px}
+.rescue-gallery .section-title{margin-bottom:25px}
+.rescue-gallery .section-title h2{font-size:clamp(1.7rem,3vw,2.35rem)}
+.rescue-intro{max-width:760px;margin:-8px auto 20px;text-align:center;color:var(--texto-claro);font-size:.92rem}
+.rescue-filters{display:flex;justify-content:center;gap:8px;margin:0 auto 25px}
+.filter-btn{border:1px solid #cfe2dc;background:#fff;color:var(--verde-escuro);border-radius:30px;padding:8px 15px;font-weight:700;font-size:.85rem;cursor:pointer}
+.filter-btn.active,.filter-btn:hover{background:var(--verde);color:#fff;border-color:var(--verde)}
+.rescue-card.hidden{display:none}
+.rescue-card-wide{grid-column:1/-1}
+.rescue-card-wide .rescue-compare{grid-template-columns:repeat(4,minmax(0,1fr))}
+.rescue-card-wide .rescue-photo{height:240px}
+.rescue-card-wide .rescue-body{max-width:none}
+.rescue-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.rescue-card{background:#fff;border:1px solid #e7eeeb;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(10,70,62,.07)}
+.rescue-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 16px 10px}
+.rescue-head .mini{font-size:.7rem;margin-bottom:2px}
+.rescue-head h3{font-size:1.05rem;line-height:1.2;color:var(--verde-escuro)}
+.rescue-tag{font-size:.7rem;font-weight:700;color:var(--verde);background:var(--verde-claro);padding:6px 9px;border-radius:30px;white-space:nowrap}
+.rescue-compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 10px}
+.rescue-photo{position:relative;height:175px;overflow:hidden;border-radius:12px}
+.rescue-photo img{width:100%;height:100%;object-fit:cover}
+.photo-label{position:absolute;left:7px;bottom:7px;background:rgba(7,63,59,.88);color:#fff;padding:4px 7px;border-radius:6px;font-size:.66rem;font-weight:700}
+.rescue-body{padding:12px 16px 15px}
+.rescue-body p{color:var(--texto-claro);font-size:.8rem;line-height:1.5;margin-bottom:10px}
+.rescue-progress{display:flex;justify-content:space-between;gap:6px;margin:8px 0 12px}
+.progress-step{font-size:.68rem;color:var(--texto-claro);display:flex;align-items:center;gap:4px}
+.progress-step i{color:var(--laranja);font-size:.75rem}
+.rescue-actions{display:flex;gap:8px;flex-wrap:wrap}
+.rescue-actions .btn{padding:8px 13px;font-size:.72rem}
+.rescue-cta{margin-top:25px;padding:18px 20px;background:var(--verde-claro);border-radius:16px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.rescue-cta h3{font-size:1rem;color:var(--verde-escuro)}
+.rescue-cta p{font-size:.8rem;color:var(--texto-claro)}
+.rescue-cta .social-btn{padding:9px 13px;font-size:.75rem}
+@media(max-width:800px){.rescue-grid{grid-template-columns:1fr}.rescue-photo{height:190px}.rescue-card-wide .rescue-compare{grid-template-columns:1fr 1fr}.rescue-card-wide .rescue-photo{height:190px}}
+@media(max-width:600px){.rescue-gallery{padding:50px 0 55px}.rescue-intro{font-size:.85rem}.rescue-head{padding:13px 12px 9px}.rescue-compare{padding:0 8px;gap:6px}.rescue-photo,.rescue-card-wide .rescue-photo{height:155px}.rescue-body{padding:10px 12px 12px}.rescue-progress{display:none}.rescue-cta{flex-direction:column;align-items:flex-start}.rescue-cta .social-buttons{width:100%}.rescue-cta .social-btn{flex:1;justify-content:center}}
+
+/* Botão flutuante WhatsApp */
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:1000;display:flex;align-items:center;gap:10px;text-decoration:none}
+.whatsapp-float .wa-btn{position:relative;width:62px;height:62px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.28);animation:wa-bounce 2.6s ease-in-out infinite;transition:transform .25s}
+.whatsapp-float .wa-btn::before,.whatsapp-float .wa-btn::after{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.55;z-index:-1;animation:wa-pulse 2.2s ease-out infinite}
+.whatsapp-float .wa-btn::after{animation-delay:1.1s}
+.whatsapp-float .wa-btn svg{width:36px;height:36px;fill:#fff}
+.whatsapp-float:hover .wa-btn{transform:scale(1.1);animation-play-state:paused}
+.whatsapp-float .wa-label{background:#fff;color:#173f3b;font-weight:700;font-size:.85rem;padding:9px 14px;border-radius:50px;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:nowrap;opacity:0;transform:translateX(10px);pointer-events:none;transition:.3s;order:-1}
+.whatsapp-float:hover .wa-label,.whatsapp-float:focus-visible .wa-label{opacity:1;transform:none}
+@keyframes wa-pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.8);opacity:0}}
+@keyframes wa-bounce{0%,80%,100%{transform:translateY(0)}86%{transform:translateY(-9px)}92%{transform:translateY(0)}96%{transform:translateY(-4px)}}
+@media(max-width:600px){.whatsapp-float{right:14px;bottom:14px}.whatsapp-float .wa-btn{width:56px;height:56px}.whatsapp-float .wa-btn svg{width:32px;height:32px}.whatsapp-float .wa-label{display:none}}
+@media(max-width:600px){.floating-pix{right:13px;bottom:84px}.back-top{right:19px;bottom:150px}}
+@media(prefers-reduced-motion:reduce){.whatsapp-float .wa-btn,.whatsapp-float .wa-btn::before,.whatsapp-float .wa-btn::after{animation:none}}
+
+/* Galeria (lightbox) das fotos dos cards */
+.rescue-photo{cursor:zoom-in}
+.rescue-photo img{transition:transform .35s}
+.rescue-photo:hover img,.rescue-photo:focus-visible img{transform:scale(1.05)}
+.rescue-photo:focus-visible{outline:3px solid var(--laranja);outline-offset:2px}
+.rescue-photo::after{content:"\1F50D";position:absolute;right:7px;top:7px;width:28px;height:28px;border-radius:50%;background:rgba(7,63,59,.85);font-size:.8rem;display:flex;align-items:center;justify-content:center;opacity:0;transition:.25s}
+.rescue-photo:hover::after,.rescue-photo:focus-visible::after{opacity:1}
+.lightbox{position:fixed;inset:0;z-index:3000;background:rgba(4,25,23,.94);display:none;flex-direction:column;align-items:center;justify-content:center;padding:56px 64px 28px;touch-action:pan-y}
+.lightbox.open{display:flex;animation:lb-in .25s ease}
+@keyframes lb-in{from{opacity:0}to{opacity:1}}
+.lightbox-stage{flex:1;min-height:0;width:100%;display:flex;align-items:center;justify-content:center}
+.lightbox-img{max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.5);user-select:none;-webkit-user-drag:none}
+.lightbox-caption{color:#fff;text-align:center;margin-top:14px;font-size:.95rem;line-height:1.4}
+.lightbox-caption strong{display:block;font-size:1.05rem}
+.lightbox-caption span{color:rgba(255,255,255,.75);font-size:.85rem}
+.lightbox-counter{position:absolute;top:18px;left:22px;color:rgba(255,255,255,.85);font-weight:700;font-size:.9rem}
+.lightbox-btn{position:absolute;border:0;background:rgba(255,255,255,.14);color:#fff;width:46px;height:46px;border-radius:50%;font-size:1.7rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.lightbox-btn:hover,.lightbox-btn:focus-visible{background:rgba(255,255,255,.3)}
+.lightbox-close{top:12px;right:16px}
+.lightbox-prev{left:12px;top:50%;transform:translateY(-50%)}
+.lightbox-next{right:12px;top:50%;transform:translateY(-50%)}
+.lightbox.single .lightbox-prev,.lightbox.single .lightbox-next,.lightbox.single .lightbox-counter{display:none}
+@media(max-width:600px){.lightbox{padding:56px 10px 20px}.lightbox-btn{width:40px;height:40px;font-size:1.4rem}.lightbox-prev{left:6px}.lightbox-next{right:6px}.lightbox-btn.lightbox-prev,.lightbox-btn.lightbox-next{background:rgba(0,0,0,.45)}}
+@media(prefers-reduced-motion:reduce){.lightbox.open{animation:none}.rescue-photo img{transition:none}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Associação Chai Anjos Abandonados",
+  "legalName": "Associação Chai Anjos Abandonados",
+  "taxID": "50.221.283/0001-70",
+  "url": "https://chaianjos.com.br/",
+  "logo": "https://chaianjos.com.br/logo-chai.jpg",
+  "image": "https://chaianjos.com.br/img/og-image.jpg",
+  "description": "ONG de proteção animal em Água Clara - MS: resgate, cuidados veterinários e adoção responsável de cães e gatos.",
+  "telephone": "+55-67-99211-372",
+  "email": "assocchaianjosabandonados@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Manoel Batista dos Santos, 07 - Jardim Paulista",
+    "addressLocality": "Água Clara",
+    "addressRegion": "MS",
+    "postalCode": "79682-062",
+    "addressCountry": "BR"
+  },
+  "areaServed": { "@type": "City", "name": "Água Clara" },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "telephone": "+55-67-99211-372",
+    "email": "assocchaianjosabandonados@gmail.com",
+    "availableLanguage": "pt-BR"
+  },
+  "sameAs": [
+    "https://www.instagram.com/associacaochaianjosabandonados/",
+    "https://www.facebook.com/p/Associa%C3%A7%C3%A3o-chai-Anjos-Abandonados-100085603437483/"
+  ]
+}
+</script>
+
+</head>
+
+<body>
+<header>
+<div class="container header-inner">
+<a href="#inicio" class="logo"><img src="logo-chai.jpg" alt="Associação Chai Anjos Abandonados"></a>
+<nav id="navigation">
+<a href="#inicio" class="active">Início</a>
+<a href="#sobre">Sobre Nós</a>
+<a href="doacoes.html">Doações</a>
+<a href="adocao.html">Adoção</a>
+<a href="transparencia.html">Transparência</a>
+<a href="#contato">Contato</a>
+</nav>
+<a href="doacoes.html" class="btn btn-orange header-donate"><i class="fa-solid fa-heart"></i> Doe Agora</a>
+<button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="container hero-inner">
+<div class="hero-content">
+<div class="hero-paw"><i class="fa-solid fa-paw"></i></div>
+<h1>Transformando o abandono<br>em amor e esperança em <span class="script">Água Clara - MS.</span></h1>
+<p>Somos um projeto voluntário dedicado ao resgate, cuidado e destinação responsável de animais em situação de rua.</p>
+<div class="hero-buttons">
+<a href="doacoes.html" class="btn btn-orange"><i class="fa-solid fa-heart"></i> Quero Doar</a>
+<a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fa-brands fa-instagram"></i> Acompanhe no Instagram</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="alert-area">
+<div class="container">
+<div class="alert-box">
+<div class="alert-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+<div><strong>Não possuímos abrigo físico.</strong><p>Nosso trabalho depende de lares temporários, voluntários e da generosidade da nossa comunidade.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section impact">
+<div class="container">
+<div class="section-title"><div class="mini"><i class="fa-solid fa-paw"></i> Nosso Trabalho</div><h2>Como nosso trabalho acontece</h2><p>Cada resgate, cada cuidado e cada adoção representam uma nova oportunidade.</p></div>
+<div class="stats">
+<div class="stat-card"><div class="stat-icon"><i class="fa-solid fa-paw"></i></div><h3>Resgates Realizados</h3><p>Acolhemos animais em situação de rua, abandono ou maus-tratos.</p></div>
+<div class="stat-card"><div class="stat-icon"><i class="fa-solid fa-house"></i></div><h3>Animais Adotados</h3><p>Buscamos lares responsáveis para cada animal recuperado.</p></div>
+<div class="stat-card"><div class="stat-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Cuidados Veterinários</h3><p>Consultas, medicamentos e cirurgias com apoio da comunidade.</p></div>
+<div class="stat-card"><div class="stat-icon"><i class="fa-solid fa-house-chimney"></i></div><h3>Lares Temporários</h3><p>Voluntários recebem os animais em casa até a adoção.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section about" id="sobre">
+<div class="container about-grid">
+<div class="about-image"><img src="img/animal-02.webp" alt="Cão em recuperação usando cadeira de rodas, acompanhado pela Associação" style="object-position:center 60%"></div>
+<div class="about-content">
+<div class="mini"><i class="fa-solid fa-paw"></i> Sobre Nós</div>
+<h2>Juntos por eles.</h2>
+<p>A Associação Chai Anjos Abandonados atua em Água Clara (MS) com o compromisso de proteger animais em situação de abandono e vulnerabilidade.<br><br>Nosso trabalho é realizado por meio do voluntariado, resgates, cuidados, encaminhamento veterinário, lares temporários e busca por adoções responsáveis.</p>
+<div class="mv-grid">
+<div class="mv-card"><i class="fa-solid fa-bullseye"></i><h3>Missão</h3><p>Resgatar, reabilitar e promover a adoção responsável de animais abandonados.</p></div>
+<div class="mv-card"><i class="fa-solid fa-eye"></i><h3>Visão</h3><p>Reduzir o índice de abandono e maus-tratos na região de Água Clara.</p></div>
+<div class="mv-card"><i class="fa-regular fa-heart"></i><h3>Valores</h3><p>Transparência, amor pelos animais, voluntariado e responsabilidade social.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section help" id="ajudar">
+<div class="container">
+<div class="section-title"><div class="mini"><i class="fa-solid fa-heart"></i> Como Ajudar</div><h2>Sua ajuda transforma vidas</h2><p>Existem várias maneiras de contribuir com o trabalho da Associação.</p></div>
+<div class="help-grid">
+<div class="pix-card">
+<h3><i class="fa-brands fa-pix"></i> Doação via Pix</h3>
+<div class="pix-inside">
+<span class="pix-label">Chave Pix (CNPJ):</span>
+<div class="pix-key" id="pixKey">50.221.283/0001-70</div>
+<div class="pix-company"><strong>Razão Social:</strong><br>Associação Chai Anjos Abandonados</div>
+<button class="copy-pix" onclick="copyPix()"><i class="fa-regular fa-copy"></i> Copiar Chave Pix</button>
+</div>
+</div>
+<div class="help-options">
+<div class="help-card"><i class="fa-solid fa-house"></i><h3>Lar Temporário</h3><p>Receba um animal em sua casa por um período até sua adoção definitiva.</p><a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Quero%20oferecer%20um%20lar%20tempor%C3%A1rio%20para%20um%20animal." target="_blank" rel="noopener noreferrer" class="small-btn">Quero ajudar</a></div>
+<div class="help-card"><i class="fa-solid fa-box-open"></i><h3>Suprimentos</h3><p>Ração, medicamentos, produtos de limpeza e acessórios.</p><a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Quero%20doar%20suprimentos%20para%20a%20Associa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="small-btn">Quero doar</a></div>
+<div class="help-card"><i class="fa-solid fa-people-group"></i><h3>Voluntariado</h3><p>Ajude na logística, feiras de adoção e redes sociais.</p><a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Quero%20ser%20volunt%C3%A1rio%20da%20Associa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="small-btn">Quero participar</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section rescue-gallery" id="adote">
+<div class="container">
+<div class="section-title"><div class="mini"><i class="fa-solid fa-paw"></i> Histórias de Resgate</div><h2>Antes e depois: histórias que merecem uma chance</h2></div>
+<p class="rescue-intro">Aqui mostramos alguns dos animais atendidos pela Associação por meio de fotos reais. Cada imagem representa uma etapa: o resgate, os cuidados e a recuperação. Acompanhe nossas redes sociais para ver novos casos.</p>
+<div class="rescue-cta" style="margin:0 0 25px"><div><h3>🐾 Animais disponíveis para adoção</h3><p>A lista muda com frequência. Pergunte pelo WhatsApp ou veja os novos casos no Instagram.</p></div><div class="social-buttons"><a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Quero%20saber%20quais%20animais%20est%C3%A3o%20dispon%C3%ADveis%20para%20ado%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="social-btn" style="background:#25d366"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" class="social-btn instagram"><i class="fa-brands fa-instagram"></i> Instagram</a></div></div>
+<div class="rescue-filters" role="tablist" aria-label="Filtrar histórias">
+<button class="filter-btn active" data-filter="all">Todos</button>
+<button class="filter-btn" data-filter="dog">🐶 Cachorros</button>
+<button class="filter-btn" data-filter="cat">🐱 Gatos</button>
+</div>
+<div class="rescue-grid">
+<article class="rescue-card" data-kind="dog">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Um novo começo</h3></div><span class="rescue-tag"><i class="fa-solid fa-heart"></i> Recuperação</span></div>
+<div class="rescue-compare">
+<div class="rescue-photo"><img src="img/animal-01.webp" alt="Cachorro no início do resgate"><span class="photo-label">Antes • Resgate</span></div>
+<div class="rescue-photo"><img src="img/animal-02.webp" alt="Cachorro durante a recuperação"><span class="photo-label">Depois • Recuperação</span></div>
+</div>
+<div class="rescue-body">
+<p>Este cão passou por atendimento e cuidados com apoio de pessoas da comunidade. O acompanhamento, o acolhimento e a dedicação dos voluntários fazem parte da caminhada até uma vida com mais segurança e bem-estar.</p>
+<div class="rescue-progress"><div class="progress-step"><i class="fa-solid fa-truck-medical"></i>Resgate</div><div class="progress-step"><i class="fa-solid fa-stethoscope"></i>Cuidados</div><div class="progress-step"><i class="fa-solid fa-house"></i>Nova chance</div></div>
+<div class="rescue-actions"><a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fa-brands fa-instagram"></i> Ver atualizações</a><a href="doacoes.html" class="btn btn-outline">Quero ajudar</a></div>
+</div></article>
+<article class="rescue-card" data-kind="dog">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Força para continuar</h3></div><span class="rescue-tag"><i class="fa-solid fa-wheelchair"></i> Cuidados</span></div>
+<div class="rescue-compare">
+<div class="rescue-photo"><img src="img/animal-04.webp" alt="Cachorro recebendo suporte para locomoção"><span class="photo-label">Durante • Tratamento</span></div>
+<div class="rescue-photo"><img src="img/animal-03.webp" alt="Cachorro descansando durante os cuidados"><span class="photo-label">Depois • Acolhimento</span></div>
+</div>
+<div class="rescue-body">
+<p>Em cada etapa, o cuidado faz diferença. A assistência, os recursos e o apoio da comunidade ajudam o animal a enfrentar o período de recuperação com dignidade e atenção.</p>
+<div class="rescue-progress"><div class="progress-step"><i class="fa-solid fa-hands-holding-child"></i>Acolhimento</div><div class="progress-step"><i class="fa-solid fa-heart-pulse"></i>Tratamento</div><div class="progress-step"><i class="fa-solid fa-paw"></i>Recuperação</div></div>
+<div class="rescue-actions"><a href="https://www.facebook.com/p/Associa%C3%A7%C3%A3o-chai-Anjos-Abandonados-100085603437483/" target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fa-brands fa-facebook-f"></i> Ver no Facebook</a><a href="doacoes.html" class="btn btn-outline">Quero ajudar</a></div>
+</div></article>
+<article class="rescue-card rescue-card-wide" data-kind="dog">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Belinha encontrou um lar</h3></div><span class="rescue-tag"><i class="fa-solid fa-heart"></i> Adotada</span></div>
+<div class="rescue-compare">
+<div class="rescue-photo"><img src="img/animal-09.webp" alt="Belinha no momento do resgate" style="object-position:center 30%"><span class="photo-label">Antes • Resgate</span></div>
+<div class="rescue-photo"><img src="img/animal-10.webp" alt="Belinha debilitada antes dos cuidados" style="object-position:center 25%"><span class="photo-label">Antes • Vulnerabilidade</span></div>
+<div class="rescue-photo"><img src="img/animal-11.webp" alt="Belinha acolhida, descansando sobre cobertores" style="object-position:center 40%"><span class="photo-label">Depois • Acolhimento</span></div>
+<div class="rescue-photo"><img src="img/animal-12.webp" alt="Belinha com olhar doce após a recuperação" style="object-position:center 40%"><span class="photo-label">Depois • Recuperação</span></div>
+</div>
+<div class="rescue-body">
+<p>A Belinha foi resgatada, recebeu cuidados e acolhimento e hoje já foi adotada! Da situação de vulnerabilidade a uma família para chamar de sua: cada etapa só foi possível com o apoio de voluntários e da comunidade. Que a história dela inspire novas adoções.</p>
+<div class="rescue-progress"><div class="progress-step"><i class="fa-solid fa-truck-medical"></i>Resgate</div><div class="progress-step"><i class="fa-solid fa-stethoscope"></i>Cuidados</div><div class="progress-step"><i class="fa-solid fa-house-chimney"></i>Adotada</div></div>
+<div class="rescue-actions"><a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Vi%20a%20hist%C3%B3ria%20da%20Belinha%20no%20site%20e%20quero%20adotar%20um%20animal%20da%20Associa%C3%A7%C3%A3o%20Chai%20Anjos%20Abandonados." target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fa-brands fa-whatsapp"></i> Quero adotar também</a><a href="doacoes.html" class="btn btn-outline">Quero ajudar</a></div>
+</div></article>
+
+<article class="rescue-card rescue-card-wide" data-kind="dog">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Mamãe e os 7 filhotes</h3></div><span class="rescue-tag"><i class="fa-solid fa-heart"></i> Novembro 2023</span></div>
+<div class="rescue-compare" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+<div class="rescue-photo"><img src="img/animal1.jpeg" alt="Cadelinha prenha resgatada no Centro Velho, em frente à Sanesul" style="object-position:center 30%"><span class="photo-label">Resgate • Prenha</span></div>
+<div class="rescue-photo"><img src="img/animal2.jpeg" alt="Rosto da cadelinha resgatada" style="object-position:center 40%"><span class="photo-label">Resgate • Acolhimento</span></div>
+<div class="rescue-photo"><img src="img/animal3.jpeg" alt="Mamãe amamentando os 7 filhotes recém-nascidos"><span class="photo-label">Depois • Parto</span></div>
+<div class="rescue-photo"><img src="img/animal5.jpeg" alt="Mamãe e filhotes comendo juntos"><span class="photo-label">Depois • Cuidado</span></div>
+</div>
+<div class="rescue-compare" style="grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 8px;">
+<div class="rescue-photo"><img src="img/animal4.jpeg" alt="Mamãe e filhotes no quintal" style="object-position:center 40%"><span class="photo-label">Família</span></div>
+<div class="rescue-photo"><img src="img/animal6.jpeg" alt="Filhote caramelo" style="object-position:center 30%"><span class="photo-label">Filhote</span></div>
+<div class="rescue-photo"><img src="img/animal7.jpeg" alt="Filhote preto e caramelo" style="object-position:center 30%"><span class="photo-label">Filhote</span></div>
+<div class="rescue-photo"><img src="img/animal8.jpeg" alt="Filhote branco e preto" style="object-position:center 30%"><span class="photo-label">Filhote</span></div>
+</div>
+<div class="rescue-body">
+<p>Encontrada prenha e abandonada no Centro Velho, em frente à Sanesul, em Água Clara. Foi resgatada e levada para um lar temporário. No dia seguinte deu à luz <strong>7 filhotes</strong>. A mamãe e os filhotes receberam cuidados, alimentação e acompanhamento até estarem prontos para a adoção responsável.</p>
+<div class="rescue-progress">
+<div class="progress-step"><i class="fa-solid fa-truck-medical"></i>Resgate</div>
+<div class="progress-step"><i class="fa-solid fa-house"></i>Lar temporário</div>
+<div class="progress-step"><i class="fa-solid fa-paw"></i>7 filhotes</div>
+<div class="progress-step"><i class="fa-solid fa-heart"></i>Adoção</div>
+</div>
+<div class="rescue-actions">
+<a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Vi%20a%20hist%C3%B3ria%20da%20mam%C3%A3e%20e%20dos%207%20filhotes%20no%20site%20e%20quero%20saber%20mais%20sobre%20ado%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fa-brands fa-whatsapp"></i> Quero adotar</a>
+<a href="doacoes.html" class="btn btn-outline">Quero ajudar</a>
+</div>
+</div>
+</article>
+
+<article class="rescue-card rescue-card-wide" data-kind="dog">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Cadela tigrada e seus filhotes</h3></div><span class="rescue-tag"><i class="fa-solid fa-heart"></i> Maio 2023</span></div>
+<div class="rescue-compare" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+<div class="rescue-photo"><img src="img/animal11.jpeg" alt="Cadela tigrada abandonada e muito debilitada" style="object-position:center 40%"><span class="photo-label">Antes • Abandono</span></div>
+<div class="rescue-photo"><img src="img/animal10.jpeg" alt="Cadela tigrada amamentando os filhotes após o resgate"><span class="photo-label">Depois • Acolhimento</span></div>
+<div class="rescue-photo"><img src="img/animal12.jpeg" alt="Cadela tigrada com a língua de fora, amamentando"><span class="photo-label">Depois • Cuidado</span></div>
+<div class="rescue-photo"><img src="img/animal13.jpeg" alt="Cadela tigrada recuperada e sorridente"><span class="photo-label">Depois • Recuperação</span></div>
+</div>
+<div class="rescue-compare" style="grid-template-columns: repeat(1, minmax(0, 1fr)); margin-top: 8px; max-width: 320px;">
+<div class="rescue-photo" style="height: 220px;"><img src="img/filhotes.jpeg" alt="Filhotes recém-nascidos juntos" style="object-position:center 50%"><span class="photo-label">Filhotes</span></div>
+</div>
+<div class="rescue-body">
+<p>Cadela abandonada e prenha no bairro Novo Horizonte, em Água Clara. Partiu nas ruas. Foi resgatada em estado de extrema debilidade e, com o acolhimento em lar temporário, conseguiu amamentar e cuidar dos filhotes. Uma história de superação que só foi possível graças ao apoio da comunidade.</p>
+<div class="rescue-progress">
+<div class="progress-step"><i class="fa-solid fa-truck-medical"></i>Resgate</div>
+<div class="progress-step"><i class="fa-solid fa-house"></i>Lar temporário</div>
+<div class="progress-step"><i class="fa-solid fa-paw"></i>Filhotes</div>
+<div class="progress-step"><i class="fa-solid fa-heart"></i>Recuperação</div>
+</div>
+<div class="rescue-actions">
+<a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Vi%20a%20hist%C3%B3ria%20da%20cadela%20tigrada%20no%20site%20e%20quero%20saber%20mais%20sobre%20ado%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fa-brands fa-whatsapp"></i> Quero adotar</a>
+<a href="doacoes.html" class="btn btn-outline">Quero ajudar</a>
+</div>
+</div>
+</article>
+
+<article class="rescue-card rescue-card-wide" data-kind="dog">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Resgatado do lixão municipal</h3></div><span class="rescue-tag"><i class="fa-solid fa-heart"></i> Agosto 2023</span></div>
+<div class="rescue-compare" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+<div class="rescue-photo"><img src="img/animal14.jpeg" alt="Cachorro resgatado do lixão com miíase grave no pescoço" style="object-position:center 40%"><span class="photo-label">Antes • Resgate</span></div>
+<div class="rescue-photo"><img src="img/animal16.jpeg" alt="Ferimento em tratamento com pomada e gaze"><span class="photo-label">Durante • Tratamento</span></div>
+<div class="rescue-photo"><img src="img/animal15.jpeg" alt="Cachorro bandado e em recuperação no lar temporário"><span class="photo-label">Durante • Cuidados</span></div>
+<div class="rescue-photo"><img src="img/animal18.jpeg" alt="Cachorro em recuperação, descansando"><span class="photo-label">Depois • Recuperação</span></div>
+</div>
+<div class="rescue-body">
+<p>Resgatado do <strong>lixão municipal</strong> de Água Clara em agosto de 2023, com miíase grave (larvas de mosca) no pescoço. Estava sendo consumido vivo pelos bichos. Recebeu tratamento intensivo com medicamentos (Simparic, Drontal, Doxiciclina e Alantol), limpeza das feridas e acolhimento em lar temporário. Uma das histórias mais difíceis e mais importantes do nosso trabalho.</p>
+<div class="rescue-progress">
+<div class="progress-step"><i class="fa-solid fa-truck-medical"></i>Resgate</div>
+<div class="progress-step"><i class="fa-solid fa-stethoscope"></i>Tratamento</div>
+<div class="progress-step"><i class="fa-solid fa-house"></i>Lar temporário</div>
+<div class="progress-step"><i class="fa-solid fa-heart"></i>Recuperação</div>
+</div>
+<div class="rescue-actions">
+<a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Vi%20a%20hist%C3%B3ria%20do%20cachorro%20do%20lix%C3%A3o%20no%20site%20e%20quero%20ajudar." target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fa-brands fa-whatsapp"></i> Quero ajudar</a>
+<a href="doacoes.html" class="btn btn-outline">Doar via Pix</a>
+</div>
+</div>
+</article>
+
+
+
+<article class="rescue-card" data-kind="cat">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Uma gatinha em recuperação</h3></div><span class="rescue-tag"><i class="fa-solid fa-shield-heart"></i> Pós-cirurgia</span></div>
+<div class="rescue-compare">
+<div class="rescue-photo"><img src="img/animal-08.webp" alt="Gatinha recebendo atendimento"><span class="photo-label">Antes • Atendimento</span></div>
+<div class="rescue-photo"><img src="img/animal-06.webp" alt="Gatinha após cirurgia"><span class="photo-label">Depois • Pós-cirurgia</span></div>
+</div>
+<div class="rescue-body">
+<p>O atendimento veterinário é uma etapa essencial para animais que chegam em situação de vulnerabilidade. Com tratamento, acompanhamento e acolhimento, cada recuperação se torna possível.</p>
+<div class="rescue-progress"><div class="progress-step"><i class="fa-solid fa-magnifying-glass"></i>Avaliação</div><div class="progress-step"><i class="fa-solid fa-user-doctor"></i>Cirurgia</div><div class="progress-step"><i class="fa-solid fa-face-smile"></i>Recuperação</div></div>
+<div class="rescue-actions"><a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fa-brands fa-instagram"></i> Acompanhar</a><a href="doacoes.html" class="btn btn-outline">Apoiar tratamentos</a></div>
+</div></article>
+<article class="rescue-card" data-kind="cat">
+<div class="rescue-head"><div><span class="mini">🐾 História de resgate</span><h3>Cuidado que transforma</h3></div><span class="rescue-tag"><i class="fa-solid fa-eye"></i> Tratamento</span></div>
+<div class="rescue-compare">
+<div class="rescue-photo"><img src="img/animal-07.webp" alt="Gatinha em situação de vulnerabilidade"><span class="photo-label">Antes • Vulnerabilidade</span></div>
+<div class="rescue-photo"><img src="img/animal-05.webp" alt="Gatinha em recuperação"><span class="photo-label">Depois • Recuperação</span></div>
+</div>
+<div class="rescue-body">
+<p>Esta história mostra por que o atendimento não pode esperar. O apoio da comunidade contribui para consultas, medicamentos, procedimentos e todo o cuidado necessário durante a recuperação.</p>
+<div class="rescue-progress"><div class="progress-step"><i class="fa-solid fa-heart"></i>Resgate</div><div class="progress-step"><i class="fa-solid fa-pills"></i>Tratamento</div><div class="progress-step"><i class="fa-solid fa-house-chimney"></i>Proteção</div></div>
+<div class="rescue-actions"><a href="doacoes.html" class="btn btn-green"><i class="fa-brands fa-pix"></i> Ajudar via Pix</a><a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Instagram</a></div>
+</div></article>
+</div>
+<div class="rescue-cta"><div><h3>Quer acompanhar novos resgates?</h3><p>As redes sociais são atualizadas com novos casos, pedidos de ajuda e animais disponíveis para adoção.</p></div><div class="social-buttons"><a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" class="social-btn instagram"><i class="fa-brands fa-instagram"></i> Instagram</a><a href="https://www.facebook.com/p/Associa%C3%A7%C3%A3o-chai-Anjos-Abandonados-100085603437483/" target="_blank" rel="noopener noreferrer" class="social-btn facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</a></div></div>
+</div>
+</section>
+
+<section class="section transparency" id="transparencia">
+<div class="container">
+<div class="section-title"><div class="mini"><i class="fa-solid fa-file-shield"></i> Transparência</div><h2>Prestação de contas</h2><p>A transparência fortalece a confiança entre a Associação e a comunidade.</p></div>
+<div class="transparency-box">
+<i class="fa-solid fa-file-invoice-dollar"></i>
+<h3>Transparência e responsabilidade</h3>
+<p>Nesta área poderão ser disponibilizados documentos, relatórios, informações sobre doações recebidas e utilização dos recursos.</p>
+<a href="transparencia.html" class="btn btn-green"><i class="fa-solid fa-envelope"></i> Solicitar informações</a>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contato">
+<div class="container">
+<div class="section-title"><div class="mini"><i class="fa-solid fa-envelope"></i> Contato</div><h2>Faça parte dessa causa</h2><p>Entre em contato para saber como ajudar, oferecer um lar temporário ou conhecer os animais disponíveis para adoção.</p></div>
+<div class="contact-grid">
+<div class="contact-card"><i class="fa-solid fa-location-dot"></i><h3>Localização</h3><p>Água Clara - MS<br><small style="color:#607572">(endereço apenas para correspondência)</small></p></div>
+<div class="contact-card"><i class="fa-solid fa-envelope"></i><h3>E-mail</h3><p>assocchaianjosabandonados@gmail.com</p></div>
+<div class="contact-card"><i class="fa-brands fa-whatsapp"></i><h3>WhatsApp</h3><p>(67) 9921-1372</p><br><a href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Associa%C3%A7%C3%A3o%20Chai%20Anjos%20Abandonados." target="_blank" rel="noopener noreferrer" class="btn btn-green">Chamar no WhatsApp</a></div>
+<div class="contact-card"><i class="fa-brands fa-instagram"></i><h3>Instagram</h3><p>Acompanhe nossas ações</p><br><a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" class="btn btn-green">Acessar Instagram</a></div>
+<div class="contact-card"><i class="fa-brands fa-facebook-f"></i><h3>Facebook</h3><p>Novidades e pedidos de ajuda</p><br><a href="https://www.facebook.com/p/Associa%C3%A7%C3%A3o-chai-Anjos-Abandonados-100085603437483/" target="_blank" rel="noopener noreferrer" class="btn btn-green">Acessar Facebook</a></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<img src="logo-chai.jpg" alt="Associação Chai Anjos Abandonados" class="footer-logo">
+<h3>Associação Chai Anjos Abandonados</h3>
+<p>Projeto voluntário de proteção animal em Água Clara - MS.</p><br>
+<p><strong>CNPJ:</strong> 50.221.283/0001-70</p>
+<p><strong>Endereço (correspondência):</strong><br>Rua Manoel Batista dos Santos, 07<br>Jardim Paulista — CEP 79682-062<br>Água Clara - MS</p>
+<p><strong>WhatsApp:</strong> (67) 9921-1372</p>
+<p><strong>E-mail:</strong> assocchaianjosabandonados@gmail.com</p>
+</div>
+<div><h3>Links rápidos</h3><ul><li><a href="#inicio">Início</a></li><li><a href="adocao.html">Adoção</a></li><li><a href="doacoes.html">Doações</a></li><li><a href="#sobre">Sobre Nós</a></li></ul></div>
+<div><h3>Institucional</h3><ul><li><a href="transparencia.html">Transparência</a></li><li><a href="privacidade.html">Política de Privacidade</a></li><li><a href="#contato">Contato</a></li></ul></div>
+<div><h3>Redes sociais</h3><div class="footer-social">
+<a href="https://www.instagram.com/associacaochaianjosabandonados/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com/p/Associa%C3%A7%C3%A3o-chai-Anjos-Abandonados-100085603437483/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+</div></div>
+</div>
+<div class="copyright">© 2026 Associação Chai Anjos Abandonados. Todos os direitos reservados.</div>
+</div>
+</footer>
+
+<a href="doacoes.html" class="floating-pix" title="Doar via Pix"><i class="fa-brands fa-pix"></i></a>
+<a href="#inicio" class="back-top" id="backTop" title="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
+<div class="toast" id="toast">Chave Pix copiada! ❤️</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria de fotos" aria-hidden="true">
+<span class="lightbox-counter" id="lbCounter"></span>
+<button type="button" class="lightbox-btn lightbox-close" id="lbClose" aria-label="Fechar galeria">&times;</button>
+<button type="button" class="lightbox-btn lightbox-prev" id="lbPrev" aria-label="Foto anterior">&#8249;</button>
+<button type="button" class="lightbox-btn lightbox-next" id="lbNext" aria-label="Próxima foto">&#8250;</button>
+<div class="lightbox-stage"><img class="lightbox-img" id="lbImg" src="" alt=""></div>
+<div class="lightbox-caption" id="lbCaption"></div>
+</div>
+
+<script>
+const mobileMenu=document.getElementById("mobileMenu");
+const navigation=document.getElementById("navigation");
+mobileMenu.addEventListener("click",function(){
+ navigation.classList.toggle("active");
+ const icon=mobileMenu.querySelector("i");
+ icon.classList.toggle("fa-bars");
+ icon.classList.toggle("fa-xmark");
+});
+document.querySelectorAll("#navigation a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navigation.classList.remove("active");
+  const icon=mobileMenu.querySelector("i");
+  icon.classList.remove("fa-xmark");
+  icon.classList.add("fa-bars");
+ });
+});
+const filterButtons=document.querySelectorAll('.filter-btn');
+const rescueCards=document.querySelectorAll('.rescue-card');
+filterButtons.forEach(btn=>btn.addEventListener('click',()=>{
+ filterButtons.forEach(b=>b.classList.remove('active'));
+ btn.classList.add('active');
+ const filter=btn.dataset.filter;
+ rescueCards.forEach(card=>{card.classList.toggle('hidden',filter!=='all' && card.dataset.kind!==filter);});
+}));
+function copyPix(){
+ const pix="50221283000170";
+ navigator.clipboard.writeText(pix).then(showToast).catch(()=>alert("Chave Pix: 50.221.283/0001-70"));
+}
+function showToast(){
+ const toast=document.getElementById("toast");
+ toast.classList.add("show");
+ setTimeout(()=>toast.classList.remove("show"),3000);
+}
+const backTop=document.getElementById("backTop");
+window.addEventListener("scroll",()=>{
+ backTop.classList.toggle("show",window.scrollY>500);
+});
+const sections=document.querySelectorAll("section[id]");
+const navLinks=document.querySelectorAll("nav a");
+window.addEventListener("scroll",()=>{
+ let current="";
+ sections.forEach(section=>{
+  if(window.scrollY>=section.offsetTop-120) current=section.getAttribute("id");
+ });
+ navLinks.forEach(link=>{
+  link.classList.toggle("active",link.getAttribute("href")==="#"+current);
+ });
+});
+
+/* Galeria de fotos dos cards */
+(function(){
+ const box=document.getElementById("lightbox");
+ const img=document.getElementById("lbImg");
+ const cap=document.getElementById("lbCaption");
+ const counter=document.getElementById("lbCounter");
+ const btnClose=document.getElementById("lbClose");
+ const btnPrev=document.getElementById("lbPrev");
+ const btnNext=document.getElementById("lbNext");
+ let items=[],index=0,lastFocus=null,startX=null;
+ function show(i){
+  index=(i+items.length)%items.length;
+  const it=items[index];
+  img.src=it.src;img.alt=it.alt;
+  cap.innerHTML="";
+  const t=document.createElement("strong");t.textContent=it.title;
+  const l=document.createElement("span");l.textContent=it.label;
+  cap.append(t,l);
+  counter.textContent=(index+1)+" / "+items.length;
+ }
+ function open(card,startIndex){
+  const title=card.querySelector("h3")?card.querySelector("h3").textContent:"";
+  items=[...card.querySelectorAll(".rescue-photo")].map(ph=>({
+   src:ph.querySelector("img").getAttribute("src"),
+   alt:ph.querySelector("img").alt,
+   label:ph.querySelector(".photo-label")?ph.querySelector(".photo-label").textContent:"",
+   title:title
+  }));
+  lastFocus=document.activeElement;
+  box.classList.toggle("single",items.length<2);
+  show(startIndex);
+  box.classList.add("open");box.setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";
+  btnClose.focus();
+ }
+ function close(){
+  box.classList.remove("open");box.setAttribute("aria-hidden","true");
+  document.body.style.overflow="";img.src="";
+  if(lastFocus&&lastFocus.focus)lastFocus.focus();
+ }
+ document.querySelectorAll(".rescue-card").forEach(card=>{
+  const photos=[...card.querySelectorAll(".rescue-photo")];
+  photos.forEach((ph,i)=>{
+   ph.setAttribute("role","button");ph.setAttribute("tabindex","0");
+   ph.setAttribute("aria-label","Ampliar foto: "+(ph.querySelector("img").alt||""));
+   ph.addEventListener("click",()=>open(card,i));
+   ph.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open(card,i);}});
+  });
+ });
+ btnClose.addEventListener("click",close);
+ btnPrev.addEventListener("click",()=>show(index-1));
+ btnNext.addEventListener("click",()=>show(index+1));
+ box.addEventListener("click",e=>{if(e.target===box||e.target.classList.contains("lightbox-stage"))close();});
+ document.addEventListener("keydown",e=>{
+  if(!box.classList.contains("open"))return;
+  if(e.key==="Escape")close();
+  else if(e.key==="ArrowLeft"&&items.length>1)show(index-1);
+  else if(e.key==="ArrowRight"&&items.length>1)show(index+1);
+  else if(e.key==="Tab"){
+   const f=[btnClose,btnPrev,btnNext].filter(b=>getComputedStyle(b).display!=="none");
+   const first=f[0],last=f[f.length-1];
+   if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+   else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+ });
+ box.addEventListener("touchstart",e=>{startX=e.touches[0].clientX;},{passive:true});
+ box.addEventListener("touchend",e=>{
+  if(startX===null||items.length<2)return;
+  const dx=e.changedTouches[0].clientX-startX;startX=null;
+  if(Math.abs(dx)>50)show(dx<0?index+1:index-1);
+ });
+})();
+</script>
+
+<a class="whatsapp-float" href="https://wa.me/556799211372?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Associa%C3%A7%C3%A3o%20Chai%20Anjos%20Abandonados." target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+<span class="wa-label">Fale conosco no WhatsApp</span>
+<span class="wa-btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C8.84 3 3 8.83 3 16c0 2.29.6 4.52 1.74 6.49L3 29l6.68-1.75A13 13 0 0 0 16.02 29C23.2 29 29 23.17 29 16S23.2 3 16.02 3zm0 23.8c-1.95 0-3.86-.53-5.53-1.52l-.4-.23-3.96 1.04 1.06-3.86-.26-.4A10.76 10.76 0 0 1 5.2 16c0-5.94 4.87-10.8 10.82-10.8 5.96 0 10.8 4.86 10.8 10.8 0 5.95-4.84 10.8-10.8 10.8zm5.93-8.08c-.32-.16-1.92-.95-2.22-1.06-.3-.11-.52-.16-.73.16-.22.32-.84 1.06-1.03 1.27-.19.22-.38.24-.7.08-.32-.16-1.37-.5-2.6-1.6-.96-.85-1.6-1.9-1.8-2.22-.18-.32-.02-.5.14-.66.15-.14.32-.38.49-.57.16-.19.22-.32.32-.54.1-.22.05-.4-.03-.57-.08-.16-.73-1.76-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.4-.3.32-1.14 1.11-1.14 2.7 0 1.6 1.17 3.14 1.33 3.36.16.22 2.3 3.5 5.56 4.92.78.33 1.38.53 1.86.68.78.25 1.49.21 2.05.13.63-.09 1.92-.78 2.19-1.54.27-.76.27-1.4.19-1.54-.08-.14-.3-.22-.62-.38z"/></svg></span>
+</a>
+</body>
+</html>
